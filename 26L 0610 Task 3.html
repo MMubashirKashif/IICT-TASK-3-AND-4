@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+  <title>Continental Hotel Reservation Form</title>
+</head>
+
+<body style="margin:0; padding:20px; background-color:#e0e0e0; font-family:Arial;">
+
+  <h2 style="color:red; text-align:center; font-family:Arial; font-size:20px; margin:10px 0 20px 0;">Continental Hotel Reservation Form</h2>
+
+  <form action="/action_page.php">
+
+    <table style="width:440px; margin:0 auto; background-color:#c9e4ff; border:2px solid darkgray; font-family:Arial; font-size:15px;">
+
+      <tr>
+        <td style="padding:6px; width:130px; text-align:right; font-weight:bold; border:1px solid darkgray;"><label for="name">Name</label></td>
+        <td style="padding:6px; border:1px solid darkgray;">
+          <input type="text" id="name" name="name" value="Enter your name" style="color:gray; width:195px; padding:3px; border:1px solid darkgray; font-family:Arial; font-size:13px;">
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:6px; text-align:right; font-weight:bold; border:1px solid darkgray;"><label for="email">eMail</label></td>
+        <td style="padding:6px; border:1px solid darkgray;">
+          <input type="email" id="email" name="email" value="info@continental.pk" style="width:195px; padding:3px; border:1px solid darkgray; font-family:Arial; font-size:13px;">
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:6px; text-align:right; font-weight:bold; border:1px solid darkgray;"><label for="mobile">Mobile No</label></td>
+        <td style="padding:6px; border:1px solid darkgray;">
+          <input type="text" id="mobile" name="mobile" value="Enter your cell number" style="color:gray; width:195px; padding:3px; border:1px solid darkgray; font-family:Arial; font-size:13px;">
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:6px; text-align:right; font-weight:bold; border:1px solid darkgray;"><label for="arrival">Arrival Time</label></td>
+        <td style="padding:6px; border:1px solid darkgray;">
+          <input type="text" id="arrival" name="arrival" value="Enter your arrival time" style="color:gray; width:165px; padding:3px; border:1px solid darkgray; font-family:Arial; font-size:13px;">
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:6px; text-align:right; font-weight:bold; border:1px solid darkgray;"><label for="departure1">Departure</label></td>
+        <td style="padding:6px; border:1px solid darkgray;">
+          <input type="text" id="departure1" name="departure1" style="width:110px; padding:3px; margin-right:10px; border:1px solid darkgray; font-family:Arial; font-size:13px;">
+          <input type="text" id="departure2" name="departure2" style="width:110px; padding:3px; border:1px solid darkgray; font-family:Arial; font-size:13px;">
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:6px; text-align:right; font-weight:bold; border:1px solid darkgray;">Room Type</td>
+        <td style="padding:6px; border:1px solid darkgray;">
+          <input type="radio" id="single" name="room" value="single"><label for="single">Single</label>
+          <input type="radio" id="double" name="room" value="double"><label for="double">Double</label><br>
+          <input type="radio" id="suite" name="room" value="suite"><label for="suite">Presidential Suite</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:6px; text-align:right; font-weight:bold; border:1px solid darkgray;">Preferences</td>
+        <td style="padding:6px; border:1px solid darkgray;">
+          <input type="checkbox" id="nonsmoking" name="pref" value="nonsmoking"><label for="nonsmoking">Non-Smoking</label><br>
+          <input type="checkbox" id="internet" name="pref" value="internet"><label for="internet">Internet</label><br>
+          <input type="checkbox" id="mattress" name="pref" value="mattress"><label for="mattress">Firm Mattress</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:6px; text-align:right; font-weight:bold; border:1px solid darkgray;">Mode of Payment</td>
+        <td style="padding:6px; border:1px solid darkgray;">
+          <input type="checkbox" id="cash" name="payment" value="cash"><label for="cash">Cash</label>
+          <input type="checkbox" id="check" name="payment" value="check"><label for="check">Check</label><br>
+          <input type="checkbox" id="credit" name="payment" value="credit"><label for="credit">Credit Card</label>
+          <select id="card" name="card" style="font-family:Arial; font-size:13px;">
+            <option value="">Select Card</option>
+            <option value="visa">Visa</option>
+            <option value="mastercard">MasterCard</option>
+            <option value="amex">American Express</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" style="padding:6px; text-align:center; border:1px solid darkgray;">
+          <input type="submit" value="Send Data" style="font-family:Arial; font-size:13px; padding:3px 10px;">
+        </td>
+      </tr>
+
+    </table>
+
+  </form>
+
+</body>
+</html>
